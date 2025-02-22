@@ -1,14 +1,22 @@
 package BEWeekFiveCodingAssignment;
 
+//Created a new class through File, New, Class
+//Named new Class "SpacedLogger"
+//Included "implements Logger" to pull in Logger Interface
+
 public class SpacedLogger implements Logger{
 
+//Logger overrides with 2 inherited methods: "log" and "error"	
+//Named log of String "ohHi"
 	@Override
 	public void log(String ohHi) {
-		
+
+//Method prints input for String ohHi, using .replace to add a space in between each character 		
 		System.out.println(ohHi.replace("", " "));
 		
 	}
 
+//Method prints "ERROR: " and adds input for String ohNo using .replace to add a space in between each character 	
 	@Override
 	public void error(String ohNo) {
 		System.out.println("ERROR: " +  ohNo.replace("", " "));
@@ -17,36 +25,3 @@ public class SpacedLogger implements Logger{
 	
 }	
 	
-//    public static String addSpaces(String text) {
-  //      if (text == null || text.isEmpty()) {
-    //        return "";
-      //  }
-        //StringBuilder result = new StringBuilder();
-//        for (int i = 0; i < text.length(); i++) {
-  //          result.append(text.charAt(i));
-    //        if (i < text.length() - 1) {
-      //          result.append(" ");
-        //    }
-//        }
-  //      return result.toString();
-    //}
-	//
-//	public static void main(String[] args) {
-	//	
-		//Logger logger = new ConsoleLogger();
-//
-	//			String ohHi = "OH HI";
-		//		String spacedString = addSpaces(ohHi);
-			//	String ohNo = "ERROR: OH NO!";
-				//String spacedString2 = addSpaces(ohNo);
-//
-	//			logger.log(spacedString);
-		
-		
-		//logger.error(spacedString2);
-				
-	//}
-
-
-	
-//}
